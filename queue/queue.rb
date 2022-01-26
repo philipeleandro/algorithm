@@ -12,6 +12,10 @@ attr_reader :queue
     @queue = new_array
   end
 
+  def queue
+    @queue.dup 
+  end
+
   def delete(n)
     n.times do
       queue.delete_at(0)

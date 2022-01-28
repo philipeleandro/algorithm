@@ -10,16 +10,22 @@ class Stack
       new_array[new_array.size-1] = value
       stack.each.with_index {|num,i| new_array[i] = num}
       @stack = new_array
+      show_array
     end
+
+    def stack 
+      @stack.dup
+     end 
   
-    def delete(n)k
+    def delete(n)
       n.times do
-        stack.delete_at(stack.size-1)
+        @stack.delete_at(stack.size-1)
       end
+      show_array
     end
     
     def show_array
-      puts "#{stack}"
+      p @stack
     end
   end
   

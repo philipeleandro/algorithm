@@ -13,7 +13,6 @@ def selection_sort(array)
     aux = array[i]
     array[i] = array[smallest_index]
     array[smallest_index] = aux
-    puts "#{array}"
   end
+    return p array
 end
-selection_sort([3,4,6,1])

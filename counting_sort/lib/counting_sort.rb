@@ -10,9 +10,6 @@ def counting_sort(array)
       i += 1
     end
   end
-    p sorted_array
+    return p sorted_array
 end
 
-
-array = [1,4,2,1,3,2]
-counting_sort(array)

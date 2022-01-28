@@ -13,5 +13,5 @@ def bubble_sort(array)
 
     break if not condition
   end
-   puts "#{array}"
+   return array
 end

@@ -10,6 +10,7 @@ attr_reader :queue
     new_array[new_array.size-1] = value
     queue.each.with_index {|num,i| new_array[i] = num}
     @queue = new_array
+    show_array
   end
 
   def queue
@@ -21,10 +22,11 @@ attr_reader :queue
       queue.delete_at(0)
     end
     @queue = queue
+    show_array
   end
   
   def show_array
-    puts "#{@queue}"
+    puts @queue
   end
 end
 

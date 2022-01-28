@@ -13,5 +13,5 @@ def bubble_sort(array)
 
     break if not condition
   end
-   return array
+   return p array
 end

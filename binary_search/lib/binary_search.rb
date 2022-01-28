@@ -16,8 +16,7 @@ def binary_search(value,array)
   return p "There's no number #{value} in this array!!"
 end
 
-array = [0, 1, 3, 5, 6, 7, 8, 9, 10, 11, 12]
-binary_search(13,array)
+
 
 
 

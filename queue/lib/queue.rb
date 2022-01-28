@@ -1,5 +1,5 @@
 class Queue
-attr_reader :queue
+attr_accessor :queue
 
   def initialize(queue)
     @queue = queue
@@ -19,14 +19,13 @@ attr_reader :queue
 
   def delete(n)
     n.times do
-      queue.delete_at(0)
+      @queue.delete_at(0)
     end
-    @queue = queue
     show_array
   end
   
   def show_array
-    puts @queue
+    p @queue
   end
 end
 

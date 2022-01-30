@@ -42,9 +42,4 @@ attr_accessor :m1, :m2
       ]"
     end
   end
-   
 end
-
-
-# ma = Matrix.new([[1,1,1],[2,2,2]],[[1,1,1],[2,2,2]])
-# ma.sum
